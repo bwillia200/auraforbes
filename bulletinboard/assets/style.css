@@ -1,0 +1,71 @@
+/*.main-table and solid border
+}*/
+
+.main-table-tr td{
+	border: solid black 1px;
+	padding: 20px;
+}
+
+.main-button {
+	color: blue;
+	padding: 10px 40px 5px 40px;
+	margin-left: 40%;
+}
+.main-button a {
+	text-decoration: none;
+	font-size: 20px;
+}
+.title {
+	font-weight: bold;
+	font-size: 20px;
+}
+.body {
+	font-size: 20px;
+}
+.main-heading{
+	text-align: center;
+	font-size: 25px;
+	padding: 30px;
+}
+/***ADD***/
+
+.add-form {
+	padding-top: 20px;
+	padding-bottom: 50px;
+	margin-top: 25px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.input-title {
+	width: 400px;
+	padding: 10px;
+	margin-left: 25%;
+	margin-bottom: 25px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.input-body {
+	height: 100px;
+	width: 500px;
+	padding: 10px;
+	margin-left: 19%;
+	font-size: 20px;
+	text-align: center;
+}
+.add-btn {
+margin-left: 45%;
+margin-top: 30px;
+color: blue;
+width: 100px;
+height: 50px;
+}
+.add-main-btn {
+	color: blue;
+	padding: 15px 40px 15px 40px;
+	margin-left: 42%;
+}
+.add-main-btn a {
+	text-decoration: none;
+	font-size: 20px;
+}

@@ -1,0 +1,27 @@
+
+<html>
+	<head>
+		<title>BulletinBoard</title>
+		<link rel="stylesheet" type="text/css" href="/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/style.css"/>
+	</head>
+
+	<body>
+		<h1 class="main-heading">Read and Write, whatever you like!</h1>
+		<button class="main-button"><a href="/add">Add A Message</a></button>
+
+		<table class="main-table">
+			<% for (let i = 0; i < title.length; i++) { %>
+				<tr class="main-table-tr">
+					<td><%= title[i].id %></td>
+					<td class="title"><%= title[i].title %></td>
+					<td class="body"><%= title[i].body %></td>
+					<td><%= title[i].created %></td>
+				</tr>
+			<% } %>
+		</table>
+		<button class="main-button"><a href="/add">Add A Message</a></button>
+
+
+	</body>
+</html>
