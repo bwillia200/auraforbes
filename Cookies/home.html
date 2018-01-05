@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="home.css">
+
+
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="heading">
+        Welcome Back To Cookie Menu
+      </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 ">
+      <p class="procedure">
+      Which cookies do want today?<br> Sugar? Chocolate? Lemon?
+      </p>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-2 ">
+
+
+    </div>
+
+    <div class="col-md-3 sugar cookie-option">
+      <img src="sugar.jpg" onclick="sugarCounter()">
+      <p></p>
+
+    </div>
+    <div class="col-md-3 chocolate cookie-option">
+      <img src="chocolate.jpg" onclick="chocolateCounter()">
+      <p></p>
+
+    </div>
+    <div class="col-md-3 lemon cookie-option">
+      <img src="lemon.jpg" onclick="lemonCounter()">
+
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 button">
+      <div class="count" onclick="cookieCount(true)">Count</div>
+    </div>
+    <div class="col-md-6 button">
+      <div class="count" onclick="reset()">Reset</div>
+    </div>
+  </div>
+
+
+  <script src="cookies.js"></script>
+  <script>
+
+//------------------ SUGAR --------------------------
+
+//this happens when refresh
+    var s = 0;
+
+//check if there is a value in the cookie if there is the value get that value from the cookie
+      if (typeof Cookies.get("sugarclick") == "string") {
+        s = Cookies.get("sugarclick")
+        };
+//add 1 to that click and save it into the sugarclick cookie... s = s+"" turns the value into a string for the if statement to work
+    function sugarCounter() {
+      s++;
+      s = s+"";
+      Cookies.set("sugarclick", s);
+      cookieCount();
+    };
+
+// CHOCOLATE 
+    var c =0;
+    if (typeof Cookies.get("chocolateclick") == "string"){
+      c = Cookies.get("chocolateclick")
+    };
+
+    function chocolateCounter() {
+      c++;
+      c = c+"";
+      Cookies.set("chocolateclick", c);
+
+      cookieCount();
+    }
+
+//LEMON 
+
+    l = 0;
+
+    if(typeof Cookies.get("lemonclick") == "string"){
+      l = Cookies.get("lemonclick")
+    };
+
+    function lemonCounter() {
+      l++;
+      l = l+"";
+      Cookies.set("lemonclick", l);
+
+      cookieCount();
+    }
+
+// COUNT 
+
+//Number() turns strings into numbers to allow adding
+
+function cookieCount(showTotal) {
+    var totalcookies = Number(s) + Number(c) + Number(l);
+
+    if(totalcookies > Number(10)) {
+      alert("You've eaten " + totalcookies + " cookies!!! You're eating too many!!!!");
+    }
+    else if (showTotal) {
+      alert("You've eaten " + totalcookies + " cookies!!!");
+    }
+};
+
+// RESET
+//set the value in the cookie to 0 and set each value of the click = 0
+    function reset() {
+      Cookies.set("sugarclick", 0);
+      Cookies.set("chocolateclick", 0);
+      Cookies.set("lemonclick", 0);
+      s = 0;
+      c = 0;
+      l = 0;
+      totalcookies = 0;
+    }
+
+
+
+
+  </script>
+
+</body>
+
+
+</html>

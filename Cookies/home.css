@@ -1,0 +1,72 @@
+body {
+  background: url("cookiesback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cookie-option{
+  margin: 33px 46px 70px 2px;
+  padding: 11px 2px;
+  height: 290px;
+  width: 309px;
+  border-radius: 181px;
+  text-align: center;
+  box-shadow:
+  0 4px 20px 0 rgba(235, 220, 178, 0.8),
+  0 6px 35px 0 rgba(0, 0, 0, 0.9);
+}
+
+.cookie-option:hover {
+  background-color: #FEF3E2;
+  cursor: pointer;
+}
+
+.cookie-option:active {
+  box-shadow: 0 6px #B38867;
+  transform: translateY(5px);
+}
+
+.heading{
+  text-shadow: 2px 2px #B38867;
+  margin-top: 6%;
+  text-align: center;
+  color: white;
+  font: italic bold 65px Georgia, serif;
+}
+
+.procedure{
+  text-shadow: 1px 1px #B38867;
+  text-align: center;
+  color: white;
+  font: italic bold 33px/42px Georgia, serif;
+}
+
+.button {
+  width: 216px;
+}
+
+.count {
+  margin-left: 554px;
+  width: 171px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 6px;
+  text-shadow: 1px 1px #B38867;
+  color: white;
+  font: italic bold 33px Georgia, serif;
+  border-radius: 25px;
+  box-shadow:
+  0 4px 20px 0 rgba(235, 220, 178, 0.8),
+  0 6px 35px 0 rgba(0, 0, 0, 0.9);
+}
+
+.count:hover {
+    background-color: #FEF3E2;
+    color: #B38867;
+    cursor: pointer;
+}
+
+.count:active {
+ box-shadow: 0 5px #B38867;
+ transform: translateY(4px);
+}
