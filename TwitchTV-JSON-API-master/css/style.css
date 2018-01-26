@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Sans-Serif;
+}
+
+#container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+#buttons {
+  text-align: center;
+}
+
+
+
+
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 20px;
+  margin: 5px 5px;
+  padding: 0 0;
+  vertical-align: middle;
+}
+
+.online {
+  background-color: PaleGreen;
+  margin: 5px 5px;
+  padding: 0 0;
+  display:flex;
+  align-items:center;
+  text-align: center
+}
+
+.offline {
+  background-color: LightCoral;
+  margin: 5px 5px;
+  padding: 0 0;
+  display:flex;
+  align-items:center;
+}
+
+.text-container {
+  display: inline;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hidden {
+  display: none;
+}
